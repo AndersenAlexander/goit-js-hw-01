@@ -3,7 +3,8 @@ function makeTransaction(quantity, pricePerDroid) {
     return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
 }
 
-// code for checking the correctness of the function
-console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
-console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
-console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
+// task-1-results
+const task1Results = document.getElementById("task-1-results");
+task1Results.innerHTML += `<p>${makeTransaction(5, 3000)}</p>`;
+task1Results.innerHTML += `<p>${makeTransaction(3, 1000)}</p>`;
+task1Results.innerHTML += `<p>${makeTransaction(10, 500)}</p>`;
