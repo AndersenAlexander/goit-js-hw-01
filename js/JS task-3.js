@@ -6,7 +6,8 @@ function getElementWidth(content, padding, border) {
     return totalWidth;
 }
 
-// code for checking the correctness of the function
-console.log(getElementWidth("50px", "8px", "4px")); // 74
-console.log(getElementWidth("60px", "12px", "8.5px")); // 101
-console.log(getElementWidth("200px", "0px", "0px")); // 200
+// task-3-results
+const task3Results = document.getElementById("task-3-results");
+task3Results.innerHTML += `<p>getElementWidth("50px", "8px", "4px") = ${getElementWidth("50px", "8px", "4px")}</p>`;
+task3Results.innerHTML += `<p>getElementWidth("60px", "12px", "8.5px") = ${getElementWidth("60px", "12px", "8.5px")}</p>`;
+task3Results.innerHTML += `<p>getElementWidth("200px", "0px", "0px") = ${getElementWidth("200px", "0px", "0px")}</p>`;
